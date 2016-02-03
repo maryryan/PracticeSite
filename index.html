@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <!--<style>
+            h1:first-of-type {
+                color:red;
+            }
+
+            h1 {
+                color:blue;
+            }
+
+            .moon{
+                text-transform: uppercase;
+            }
+
+            #taco{
+                background-color: orange;
+            }
+
+        </style> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <h1>Hello, world!</h1> <!-- OR "style="color:red"" -->
+        <h1 class="moon">Hello, moon!</h1>
+        <p>It has been a beautiful couple of days, but tomorrow it will be cold.</p>
+        <p class="moon" id="taco">I should have eaten lunch today; I would really like a taco.</p>
+        <button type="button" id="btn" class="btn btn-lg btn-default">Hello, button!</button>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+            // document.getElementById("btn").addEventListener("click", function(){
+            //     alert("Hello World");
+            // });
+
+           $("#btn").on("click", function(){
+                alert("Hello, world!");
+           });
+        </script>
+    </body>
+</html>
